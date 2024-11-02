@@ -59,16 +59,13 @@ h3 {
   grid-template-areas: "StockList StockDetails";
   grid-area: Portfolio;
   grid-gap: 1em;
+  background-color: white;
 }
 
-.StockList { 
-    grid-area: StockList; 
+.StockList, .StockDetails { 
     background-color: white;
-  }
-
-.StockDetails { 
-    grid-area: StockDetails; 
-    background-color: white;
+    padding: 1em;
+    border: 1px solid #ccc;
   }
 
 .UserForm { 
@@ -149,4 +146,8 @@ padding: 0.5em;
 max-height: 200px;
 max-width: 400px;
 object-fit: cover;
+}
+
+.Portfolio, .StockDetails {
+  display: block;
 }
